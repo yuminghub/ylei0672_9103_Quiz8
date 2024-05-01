@@ -9,7 +9,7 @@ Low sound level of soundwave
 ![An image of high soundwave](/assets/soundwave_high.png)
 High sound level of soundwave
 
-__*"Piano Piano"*__ by Adrien M & Claire B, a visual design that translates sounds into undulating lines. The artwork features two representations: one depicting a relatively static sound and another showing dynamic feedback. Each image consists of a single line. For the major project, this can be paired with Nasreen Mohamedi's __*"Untitled-1"*__ or Piet Mondrian's __*"Broadway Boogie Woogie"*__ to create a multi-dimensional exploration of auditory and visual interactions, thereby enriching the sensory experience.
+__*"Vibe"*__ *Video for concept brand from Alexis Kimbrough on YouTube. In the art world, this visualization technique is reminiscent of digital art and sound visualization work, where artists often merge sound and visual data to create immersive experiences. For example, the works of Ryoji Ikeda, a Japanese visual and sound artist, often explore similar themes, using data and sound to create dynamic visual landscapes in galleries and performances. These images reflect a modern approach to integrating audiovisual elements, showcasing how digital tools can translate auditory information into captivating visual displays.*
 
 
 ## **Part 2: Coding Technique Exploration**
@@ -17,9 +17,14 @@ __*"Piano Piano"*__ by Adrien M & Claire B, a visual design that translates soun
 ![An image of Low sound matrix](/assets/matrix_low.png)
 ![An image of High sound matrix](/assets/matrix_high.png)
 
+*Audio signals are captured through code, then quantified and converted into digital signals. Each point in the matrix dynamically changes based on real-time audio data, creating a sound-driven visual effect, suitable as part of an art installation or interactive exhibition.*
+
+*This adjustment method allows the points in the matrix to not only reflect the intensity of the sound but also to display it in a more concentrated form, making the overall visual effect more focused and dynamic. Such implementations are more suitable for music visualization and other interactive displays that require dynamic responses to audio inputs.*
+
+According to the code obtained from the [Working with sounds and speech in P5.js](https://medium.spatialpixel.com/sounds-bd05429aba38), this website contains many methods for using audio in p5.js.
 
 ### **Here is the code used from the link:**
-
+```
 let mic, fft;
 let gridRows = 10; 
 let gridCols = 10; 
@@ -53,3 +58,4 @@ function draw() {
     }
   }
 }
+```
